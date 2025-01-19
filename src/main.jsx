@@ -8,7 +8,7 @@ import Footer from './components/footer/Footer.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/onlineCourse">
       <Navbar />  
       <App />     
       <Footer />
