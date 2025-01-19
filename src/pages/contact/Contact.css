@@ -1,0 +1,126 @@
+/* Import Fonts */
+@import url("https://fonts.googleapis.com/css?family=Raleway:300");
+@import url("https://fonts.googleapis.com/css?family=Lusitana:400,700");
+
+/* General Styles */
+
+.get-in-touch {
+   max-width: 650px;
+   margin: 0 auto;
+   padding: 40px;
+   background: #fff;
+   border-radius: 8px;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.title{
+   text-align: center;
+   font-family: Raleway, sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 3px;
+   font-size: 36px;
+   line-height: 48px;
+   padding-bottom: 48px;
+   color: #333;
+}
+
+/* Grid Layout */
+.contact-form {
+   display: grid;
+   column-gap: 20px;
+   row-gap: 20px;
+}
+
+.form-field {
+   position: relative;
+   width: 100%;
+   margin: 32px 0;
+}
+
+/* For Inputs */
+.input-text {
+   display: block;
+   width: 100%;
+   height: 36px;
+   border-width: 0 0 2px 0;
+   border-color: #000;
+   font-family: Lusitana, serif;
+   font-size: 18px;
+   line-height: 26px;
+   font-weight: 400;
+   padding: 10px 10px;
+   outline: none;
+   color: #333;
+   transition: border-color 0.3s;
+}
+
+.input-text:focus {
+   border-color: #333;
+}
+
+.input-text:focus + .label,
+.input-text:not(:placeholder-shown) + .label {
+   transform: translateY(-24px);
+   font-size: 14px;
+   color: #333;
+}
+
+/* Labels */
+.label {
+   position: absolute;
+   left: 10px;
+   bottom: 10px;
+   font-family: Lusitana, serif;
+   font-size: 18px;
+   line-height: 26px;
+   font-weight: 400;
+   color: #888;
+   cursor: text;
+   transition: transform 0.2s ease-in-out;
+}
+
+/* Textarea */
+textarea.input-text {
+   resize: none;
+   height: 100px;
+}
+
+/* Submit Button (Only the Submit Button should have black background) */
+input[type="submit"].submit-btn {
+   display: inline-block;
+   background-color: #e02424;
+   color: #fff;
+   font-family: Raleway, sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   font-size: 16px;
+   line-height: 24px;
+   padding: 8px 16px;
+   border: none;
+   cursor: pointer;
+}
+
+input[type="submit"].submit-btn:hover {
+   background-color: #b90404;
+}
+
+/* Note Section */
+.note {
+   position: absolute;
+   left: 0;
+   bottom: 10px;
+   width: 100%;
+   text-align: center;
+   font-family: Lusitana, serif;
+   font-size: 16px;
+   line-height: 21px;
+}
+
+.note .link {
+   color: #888;
+   text-decoration: none;
+}
+
+.note .link:hover {
+   text-decoration: underline;
+}
